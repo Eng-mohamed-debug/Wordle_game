@@ -5,6 +5,7 @@
 # 5- rules screen
 # 6- game play screen and logic
 import random
+import os
 from english_words import get_english_words_set
 import colorama
 colorama.init(autoreset=True)
@@ -76,12 +77,15 @@ def main():
     while True:
         choice = input("Enter your choice (1-3): ").strip()
         if choice == '1':
+            os.system('cls')
             display_rules()
             show_menu()
         elif choice == '2':
+            os.system('cls')
             game()
             show_menu()
         elif choice == '3':
+            os.system('cls')
             print(colorama.Fore.MAGENTA + "\n👋 Thanks for playing! Goodbye!\n")
             break
         else:
