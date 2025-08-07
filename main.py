@@ -6,7 +6,6 @@
 # 6- game play screen and logic
 import random
 import os
-from english_words import get_english_words_set
 import colorama
 colorama.init(autoreset=True)
 
@@ -16,9 +15,10 @@ colorama.init(autoreset=True)
 
 
 def get_word():
-    words = list(get_english_words_set(['web2'], lower=True))
-    words = [word for word in words if len(word) == 5 and word.isalpha()] # get just a word with len 5
-    return random.choice(words).lower()
+    with open('assets/words.txt', 'r') as file:
+        words = file.read().splitlines()
+        return random.choice(words)
+
 
 
 
