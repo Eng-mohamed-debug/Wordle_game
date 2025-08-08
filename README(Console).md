@@ -16,7 +16,7 @@ For more information click on this link [Wardle Game](https://www.nytimes.com/ga
 
 4. If the player enters invalid word, number of tries won't be affected.
 
-5. In each time player enters a valid word the number of tries will decrease
+5. In each time player enters a valid word the number of tries will decrease.
 
 6. In each time all previous tries will be prited in the console as follows:
 
@@ -25,3 +25,5 @@ For more information click on this link [Wardle Game](https://www.nytimes.com/ga
     - If the letter exists but in wrong place, the letter appears in **Yellow**
   
     - If the letter doesn't exist, the letter appears in **Light-Grey**
+      
+7. If number of tries finishes, the player will lose and true word will be printed.
